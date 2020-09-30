@@ -11,6 +11,7 @@ require "open-uri"
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "rum")
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingred = JSON.parse(open(url).read)
